@@ -1,0 +1,18 @@
+MWPK1-TEXT
+version 1
+meta producer=seed
+section manifest manifest
+MWM1
+schema 1
+source name=sat codec=raw scale=0.5
+layer id=imagery type=raster source=sat srid=3857 priority=1
+.
+section tiles catalog
+CAT1
+tile z=2 x=1 y=1 layer=imagery span=0:4 flags=0 tags=sat
+.
+section pixels raster
+RAST1
+tile z=2 x=1 y=1 layer=imagery format=raw width=2 height=2 data="wxyz"
+.
+end

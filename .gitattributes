@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.sh text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.cc text eol=lf
+*.h text eol=lf
+*.mwp text eol=lf
+*.mwm text eol=lf
+*.mws text eol=lf

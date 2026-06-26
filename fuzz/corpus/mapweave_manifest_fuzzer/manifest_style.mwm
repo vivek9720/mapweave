@@ -1,0 +1,12 @@
+MWM1
+schema 1
+meta owner=seed
+source name=terrain codec=rle scale=1.0
+layer id=base type=raster source=terrain srid=3857 priority=2
+style-begin
+base {
+  fill: #224466;
+  opacity: 0.75;
+  label: "terrain";
+}
+style-end

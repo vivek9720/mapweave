@@ -1,0 +1,33 @@
+MWPK1-TEXT
+version 1
+meta producer=seed
+meta region=sample
+section manifest manifest
+MWM1
+schema 1
+source name=terrain codec=rle scale=1.0
+layer id=base type=raster source=terrain srid=3857 priority=2
+style-begin
+base {
+  fill: #336699;
+  opacity: 0.80;
+  width: (2 + 3) * 4;
+}
+style-end
+.
+section tiles catalog
+CAT1
+tile z=4 x=8 y=9 layer=base span=0:12 flags=1 tags=water,road
+tile z=4 x=8 y=10 layer=base span=12:12 flags=0 tags=land
+.
+section pixels raster
+RAST1
+tile z=4 x=8 y=9 layer=base format=raw width=2 height=2 data="abcd"
+.
+section delta update
+UPD1
+begin 7
+add tx=7 z=4 x=9 y=9 layer=base offset=24 length=12 flags=0
+commit 7
+.
+end

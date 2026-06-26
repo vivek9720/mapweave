@@ -1,0 +1,3 @@
+fuzz_targets:
+  - mapweave_package_fuzzer
+  - mapweave_manifest_fuzzer
